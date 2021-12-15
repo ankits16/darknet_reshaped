@@ -41,14 +41,14 @@ from setuptools.command.build_ext import build_ext
 from setuptools.command.build_py import build_py
 from setuptools import setup, find_packages
 
-class Build(build_py):
+class Build(build_ext):
  """Customized setuptools build command - builds protos on build."""
  def run(self):
      protoc_command = ["make"]
      os.chdir('./darknet_src/ai_darknet_reshaped')
      if subprocess.call(protoc_command) != 0:
          sys.exit(-1)
-     build_py.run(self)
+     build_ext.run(self)
 
 
 setup(
@@ -61,7 +61,7 @@ setup(
                     # find_packages ['ai_darknet_reshaped'],
  has_ext_modules=lambda: True,
  cmdclass={
-     'build_py': Build,
+     'build_ext': Build,
  },
  # packages=['darknet_src'],
 )

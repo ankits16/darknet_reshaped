@@ -228,3 +228,4 @@ darknet_src/ai_darknet_reshaped/src/yolo_layer.h
 darknet_src/ai_darknet_reshaped/src/yolo_v2_class.cpp
 darknet_src/ai_darknet_reshaped/src/csharp/CMakeLists.txt
 darknet_src/ai_darknet_reshaped/src/csharp/YoloCSharpWrapper.cs
+dist/ai_darknet_reshaped-1.0.tar.gz

@@ -38,6 +38,7 @@ import subprocess
 
 from setuptools import setup
 from setuptools.command.build_ext import build_ext
+from setuptools import setup, find_packages
 
 class Build(build_ext):
  """Customized setuptools build command - builds protos on build."""
@@ -53,7 +54,8 @@ setup(
  name='ai_darknet_reshaped',
  version='1.0',
  description='Python Distribution Utilities',
- packages=['darknet_src'],
+ packages=find_packages(),
+ # ['darknet_src'],
  has_ext_modules=lambda: True,
  cmdclass={
      'build_ext': Build,

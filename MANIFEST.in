@@ -1,1 +1,1 @@
-graft darknet_src
+prune darknet_src

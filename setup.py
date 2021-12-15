@@ -54,7 +54,7 @@ setup(
  name='ai_darknet_reshaped',
  version='1.0',
  description='Python Distribution Utilities',
- packages=['darknet_src',],
+ packages=['darknet_src', 'darknet_src/ai_darknet_reshaped'],
  # packages= find_packages(),
  # packages= find_packages(where='darknet_src/ai_darknet_reshaped'),
                     # find_packages ['ai_darknet_reshaped'],

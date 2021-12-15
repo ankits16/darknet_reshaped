@@ -62,5 +62,5 @@ setup(
  # cmdclass={
  #     'build_ext': Build,
  # },
- packages=['darknet_src', 'darknet_src/ai_darknet_reshaped'],
+ packages=['ai_darknet_reshaped'],
 )

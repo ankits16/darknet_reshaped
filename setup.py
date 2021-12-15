@@ -63,5 +63,5 @@ setup(
  cmdclass={
      'build_py': Build,
  },
- packages=['darknet_src/ai_darknet_reshaped'],
+ packages=['darknet_src'],
 )

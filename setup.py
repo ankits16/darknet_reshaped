@@ -53,7 +53,7 @@ class Build(build_ext):
 
 setup(
  name='ai_darknet_reshaped',
- version='1.0',
+ version='2.0',
  description='Python Distribution Utilities',
  packages=find_packages(include=['src', 'src.*']),
  # packages=['darknet_src', 'darknet_src/ai_darknet_reshaped'],

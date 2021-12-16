@@ -45,11 +45,12 @@ class Build(build_ext):
  """Customized setuptools build command - builds protos on build."""
  def run(self):
      protoc_command = ["make"]
+     protoc_command = ["'echo **************** ankit"]
      os.chdir('./src/ai_darknet_reshaped')
-     # if subprocess.call(protoc_command) != 0:
-     #     sys.exit(-1)
+     if subprocess.call(protoc_command) != 0:
+         sys.exit(-1)
      os.chdir('.')
-     subprocess.call('echo **************** ankit')
+
      build_ext.run(self)
 
 

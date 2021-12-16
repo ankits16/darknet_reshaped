@@ -66,9 +66,9 @@ setup(
  # packages= find_packages(where='darknet_src/ai_darknet_reshaped'),
                     # find_packages ['ai_darknet_reshaped'],
  has_ext_modules=lambda: True,
- cmdclass={
-     'build_ext': Build,
- },
+ # cmdclass={
+ #     'build_ext': Build,
+ # },
  include_package_data=True,
  # packages=['src', 'src/ai_darknet_reshaped'],
  package_data={

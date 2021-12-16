@@ -60,7 +60,7 @@ setup(
  version='3.0',
  description='Python Distribution Utilities',
  # packages=find_packages(include=['src', 'src/ai_darknet_reshaped']),
- packages=['darknet_src', 'darknet_src/ai_darknet_reshaped'],
+ packages=['src', 'src/ai_darknet_reshaped'],
  # package_dir={'': 'src'},
  # packages=find_packages(where='src'),
  # packages= find_packages(where='darknet_src/ai_darknet_reshaped'),

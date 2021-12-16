@@ -69,12 +69,12 @@ setup(
  # cmdclass={
  #     'build_ext': Build,
  # },
- include_package_data=True,
- # packages=['src', 'src/ai_darknet_reshaped'],
- package_data={
-        # If any package contains *.txt or *.rst files, include them:
-        "": ["darknet", "*.rst"],
-        # And include any *.msg files found in the "hello" package, too:
-        "ai_darknet_reshaped": ["darknet"],
-    },
+ # include_package_data=True,
+ # # packages=['src', 'src/ai_darknet_reshaped'],
+ # package_data={
+ #        # If any package contains *.txt or *.rst files, include them:
+ #        "": ["darknet", "*.rst"],
+ #        # And include any *.msg files found in the "hello" package, too:
+ #        "ai_darknet_reshaped": ["darknet"],
+ #    },
 )

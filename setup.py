@@ -44,11 +44,11 @@ from setuptools import setup, find_packages
 class Build(build_ext):
  """Customized setuptools build command - builds protos on build."""
  def run(self):
-     protoc_command = ["make"]
-     os.chdir('./src/ai_darknet_reshaped')
+     protoc_command = ["make --makefile ./src/ai_darknet_reshaped/Makefile"]
+     # os.chdir('./src/ai_darknet_reshaped')
      if subprocess.call(protoc_command) != 0:
          sys.exit(-1)
-     os.chdir('.')
+     # os.chdir('.')
      build_ext.run(self)
 
 

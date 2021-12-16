@@ -46,10 +46,10 @@ class Build(build_ext):
  def run(self):
      protoc_command = ["make"]
      os.chdir('./src/ai_darknet_reshaped')
-     if subprocess.call(protoc_command) != 0:
-         sys.exit(-1)
+     # if subprocess.call(protoc_command) != 0:
+     #     sys.exit(-1)
      os.chdir('.')
-     subprocess.call('echo ankit')
+     subprocess.call('echo **************** ankit')
      build_ext.run(self)
 
 
